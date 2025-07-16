@@ -27,6 +27,7 @@ interface UserFormProps {
 }
 
 export function UserForm({ user, open, onOpenChange, role }: UserFormProps) {
+  console.log(user);
   const [name, setName] = useState(user?.name || "")
   const [lastName, setLastName] = useState(user?.last_name || "")
   const [email, setEmail] = useState(user?.email || "")

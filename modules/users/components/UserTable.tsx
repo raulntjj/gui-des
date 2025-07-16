@@ -21,7 +21,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { useUsers, useDeleteUser } from "../services/queries"
 import { UserForm } from "./UserForm"
 import type { User } from "../types"
-import { Edit, Trash2, Plus, Search } from "lucide-react"
+import { Edit, Trash2, Plus, Search, Loader2 } from "lucide-react"
 import { useToast } from "@/hooks/use-toast"
 
 interface UserTableProps {
@@ -139,7 +139,7 @@ export function UserTable({
 
           {isLoading ? (
             <div className="flex justify-center py-8">
-              <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-gray-900"></div>
+              <Loader2 className="animate-spin h-4 w-4"  />
             </div>
           ) : (
             <>

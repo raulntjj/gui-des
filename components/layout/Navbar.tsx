@@ -25,7 +25,7 @@ export function Navbar() {
       <div className="flex items-center justify-between px-6 py-4">
         <div className="flex items-center space-x-4">
           <SidebarTrigger />
-          <h1 className="text-xl font-semibold text-gray-900">Sistema de Avaliações</h1>
+          <h1 className="text-xl font-semibold text-gray-900">DES GUI Master</h1>
         </div>
 
         <div className="flex items-center space-x-4">

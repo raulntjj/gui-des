@@ -21,8 +21,8 @@ export function CustomSidebar() {
     <Sidebar>
       <SidebarContent>
         <SidebarGroup>
-          <SidebarGroupLabel>Menu Principal</SidebarGroupLabel>
-          <SidebarGroupContent>
+          <SidebarGroupLabel className="text-xl">SportDES</SidebarGroupLabel>
+          <SidebarGroupContent className="mt-4">
             <SidebarMenu>
               {sidebarItems.map((item) => {
                 const Icon = item.icon
